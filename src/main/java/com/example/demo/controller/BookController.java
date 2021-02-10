@@ -33,7 +33,7 @@ public class BookController {
 		return bookService.getBooksByAuthor(author);
 	}
 
-	@GetMapping("/books/id")
+	@GetMapping("/book/id")
 	@Operation(summary = "Method to get a book by Id")
 	@ApiResponse(responseCode = "200", description = "OK")
 	public Book getBookById(@RequestParam long id) {
